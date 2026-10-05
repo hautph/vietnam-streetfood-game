@@ -1,0 +1,10 @@
+{
+  "name": "vietnam-streetfood-game",
+  "version": "1.0.0",
+  "description": "Bộ sưu tập game mô phỏng ẩm thực đường phố Việt Nam",
+  "scripts": {
+    "start": "node start.js",
+    "portal": "npx serve . -p 8080 -L",
+    "server": "npm --prefix server start"
+  }
+}

@@ -2355,7 +2355,7 @@
           allow_google_signals: false,
           allow_ad_personalization_signals: false,
           page_title: "Tiệm Xôi Bà Tám",
-          page_location: _0x1d6cf7 === "web" ? location.origin + location.pathname : "https://tiemxoibatam.io.vn/app/" + _0x1d6cf7,
+          page_location: location.origin + location.pathname,
           app_version: _0x5793b0,
           platform: _0x1d6cf7
         });
@@ -3018,7 +3018,7 @@
       _0x19e10f.paused = false;
     }
   }
-  const _0x3613cf = () => "Bản quyền Threads @nomorewaiting___ | Ver " + String(window.GAME_V || "dev").replace(/[^\w.\-]/g, "");
+  const _0x3613cf = () => "Ver " + String(window.GAME_V || "dev").replace(/[^\w.\-]/g, "");
   const _0x5164fb = "https://tiktok.com/@tiemxoibatam";
   const _0x1bafe9 = "https://threads.com/@nomorewaiting___";
   const _0x43289a = "https://facebook.com/groups/tiemxoibatam";
@@ -6404,9 +6404,9 @@
   [150, 500, 1500].forEach(function (_0x37e1d4) {
     setTimeout(_0x526de6, _0x37e1d4);
   });
-  const _0x4bf46a = false;
+  const _0x4bf46a = true;
   const _0x5dcab6 = false;
-  const _0x49220e = true;
+  const _0x49220e = false;
   const _0x555820 = _0x1539da => {
     let _0x52c44d = 2166136261;
     for (const _0x4efb3e of _0x1539da) {
@@ -6436,31 +6436,8 @@
     }
   }
   function _0x1f16ee(_0x8be24e) {
-    const _0x5eda4c = "https://" + "tiemxoibatam.io.vn";
-    _0x57f03a(_0x1525be("port_batam", "ico") + "Bà Tám dặn con", "<div class=\"notice\"><p>Ứng dụng phát hành <b>miễn phí</b> trên <b>cửa hàng ứng dụng chính thức</b>.</p>\n    <p>Trang chủ duy nhất của Tiệm Xôi Bà Tám là <b>" + _0x5eda4c.replace("https://", "") + "</b>.</p>\n    <p>Nếu con đang dùng một phiên bản khác, được tải về từ một nguồn không được kiểm chứng, Bà Tám không chịu trách nhiệm về những mất mát dữ liệu, quá trình trải nghiệm hay những tổn thất mà con gặp phải.</p>\n    <p>Tham gia Group Telegram hoặc Facebook để cập nhật thông báo mới nhất nhé con!</p></div>", [{
-      label: "Tham gia Telegram",
-      cls: "blue half",
-      keep: true,
-      fn: () => {
-        _0x463590.ev("join_group", {
-          from: "notice",
-          to: "telegram"
-        });
-        _0x4366b3(_0x35199c);
-      }
-    }, {
-      label: "Tham gia Facebook",
-      cls: "blue half",
-      keep: true,
-      fn: () => {
-        _0x463590.ev("join_group", {
-          from: "notice",
-          to: "facebook"
-        });
-        _0x4366b3(_0x43289a);
-      }
-    }, {
-      label: "Vào game",
+    _0x57f03a(_0x1525be("batam_stand", "ico") + " Bà Tám dặn con", "<div class=\"notice\"><p>Chào mừng con đến với gánh <b>Tiệm Xôi Bà Tám</b>!</p>\n    <p>Bà có đủ các món <b>Xôi Gấc, Xôi Xéo, Xôi Khúc, Xôi Bắp</b> dẻo thơm truyền thống. Con nhớ chú ý khẩu vị của khách, rắc đúng topping hành phi, chà bông để khách khen tấm tắc nha!</p>\n    <p>Hãy chăm chỉ bán hàng, dành dụm tiền nâng cấp quán và đón nhận những bất ngờ thú vị mỗi ngày nhé con!</p></div>", [{
+      label: "Vào bán xôi ngay",
       cls: "red full",
       fn: _0x8be24e
     }], "notice-box");
@@ -6549,13 +6526,8 @@
       _0x543cdd();
       _0xaf18a.classList.add("hidden");
     } catch (_0x50e6d7) {}
-    const _0x171875 = "https://" + "tiemxoibatam.io.vn";
-    _0x55ee07.innerHTML = "<div class=\"daycard\"><div class=\"d1\">Bản sao trái phép</div><div class=\"d2\">Tiệm Xôi Bà Tám chỉ phát hành trên cửa hàng ứng dụng chính thức.</div>\n    <a class=\"btn red big\" style=\"margin-top:calc(var(--u)*8);text-decoration:none\" href=\"" + _0x171875 + "\">Tải bản chính</a></div>";
-    if (!_0x24df61()) {
-      setTimeout(() => {
-        location.replace(_0x171875);
-      }, 4000);
-    }
+    const _0x171875 = "#";
+    _0x55ee07.innerHTML = "<div class=\"daycard\"><div class=\"d1\">Bản sao trái phép</div><div class=\"d2\">Tiệm Xôi Bà Tám chỉ phát hành trên cửa hàng ứng dụng chính thức.</div></div>";
   }
   const _0x1714c2 = _0x19e10f.scr.kitchen.enter;
   _0x19e10f.scr.kitchen.enter = function () {

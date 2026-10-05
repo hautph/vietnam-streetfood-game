@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Ẩm Thực Đường Phố Việt Nam - Vietnam Streetfood Simulator</title>
+  <meta name="description" content="Bộ sưu tập các tựa game mô phỏng ẩm thực đường phố Việt Nam đặc sắc: Tiệm Trà Nhỏ, Bánh Mì Bé Xíu, Tiệm Mì Cay, Tiệm Xôi Bà Tám.">
+  <meta name="theme-color" content="#d97706">
+  <link rel="icon" type="image/png" href="banh-mi/assets/favicon-32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #ea580c;
+      --primary-dark: #c2410c;
+      --accent: #f59e0b;
+      --bg: #fffbeb;
+      --text: #1f2937;
+      --text-muted: #6b7280;
+      --card-bg: #ffffff;
+      --radius: 18px;
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+      --shadow-hover: 0 20px 30px -10px rgba(234, 88, 12, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(135deg, #fef3c7 0%, #fffbeb 50%, #fed7aa 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Background street food pattern decorative shapes */
+    .bg-shape {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      z-index: 0;
+      opacity: 0.45;
+      pointer-events: none;
+    }
+    .shape-1 { width: 380px; height: 380px; background: #fbbf24; top: -100px; left: -100px; }
+    .shape-2 { width: 450px; height: 450px; background: #f97316; bottom: -120px; right: -80px; }
+
+    header {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 16px;
+      background: rgba(234, 88, 12, 0.12);
+      color: var(--primary-dark);
+      font-weight: 800;
+      font-size: 0.85rem;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 900;
+      color: #9a3412;
+      line-height: 1.2;
+      margin-bottom: 8px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    p.subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: #78350f;
+      max-width: 600px;
+      margin: 0 auto;
+      font-weight: 600;
+    }
+
+    main {
+      position: relative;
+      z-index: 10;
+      flex: 1;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 24px 20px 48px;
+    }
+
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .game-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 2px solid transparent;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+    }
+
+    .game-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-hover);
+      border-color: #fdba74;
+    }
+
+    .card-banner {
+      height: 160px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .banner-bg {
+      position: absolute;
+      inset: 0;
+      opacity: 0.85;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.5s ease;
+    }
+
+    .game-card:hover .banner-bg {
+      transform: scale(1.08);
+    }
+
+    .card-icon {
+      position: relative;
+      z-index: 2;
+      width: 84px;
+      height: 84px;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      border: 3px solid #ffffff;
+      background: #ffffff;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .card-tag {
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+    }
+
+    .card-title {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: #1e293b;
+      margin-bottom: 8px;
+    }
+
+    .card-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+
+    .card-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 18px;
+    }
+
+    .feature-pill {
+      font-size: 0.75rem;
+      background: #f1f5f9;
+      color: #475569;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+
+    .btn-play {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 12px 20px;
+      border-radius: 12px;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+    }
+
+    .game-card:hover .btn-play {
+      background: linear-gradient(135deg, #c2410c 0%, #ea580c 100%);
+      box-shadow: 0 6px 16px rgba(234, 88, 12, 0.45);
+    }
+
+    /* Color accents per game */
+    .theme-tra { --game-color: #10b981; }
+    .theme-tra .card-banner { background: linear-gradient(135deg, #059669, #34d399); }
+    .theme-tra .card-tag { color: #059669; }
+
+    .theme-banhmi { --game-color: #f59e0b; }
+    .theme-banhmi .card-banner { background: linear-gradient(135deg, #d97706, #fbbf24); }
+    .theme-banhmi .card-tag { color: #d97706; }
+
+    .theme-mycay { --game-color: #ef4444; }
+    .theme-mycay .card-banner { background: linear-gradient(135deg, #b91c1c, #f87171); }
+    .theme-mycay .card-tag { color: #dc2626; }
+
+    .theme-xoi { --game-color: #8b5cf6; }
+    .theme-xoi .card-banner { background: linear-gradient(135deg, #6d28d9, #a78bfa); }
+    .theme-xoi .card-tag { color: #7c3aed; }
+
+    footer {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding: 24px 20px 32px;
+      color: #92400e;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .cloud-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ffffff;
+      padding: 8px 18px;
+      border-radius: 999px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin-bottom: 12px;
+      font-size: 0.85rem;
+    }
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #10b981;
+      display: inline-block;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+      70% { transform: scale(1.05); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-shape shape-1"></div>
+  <div class="bg-shape shape-2"></div>
+
+  <header>
+    <div class="badge">🇻🇳 Vietnam Street Food Collection</div>
+    <h1>Phố Ẩm Thực Việt Nam</h1>
+    <p class="subtitle">Thử tài kinh doanh ẩm thực vỉa hè & quán ăn truyền thống. Hỗ trợ chơi Offline, PWA & Lưu trữ Đám mây.</p>
+  </header>
+
+  <main>
+    <div class="games-grid">
+      <!-- Game 1: Tiệm Trà Nhỏ -->
+      <a href="./tiem-tra-nho/" class="game-card theme-tra">
+        <div class="card-banner">
+          <img src="./tiem-tra-nho/icon-192.png" alt="Tiệm Trà Nhỏ" class="card-icon">
+        </div>
+        <div class="card-content">
+          <div class="card-tag">🧋 Trà Sữa & Đồ Uống</div>
+          <h2 class="card-title">Tiệm Trà Nhỏ</h2>
+          <p class="card-desc">Pha chế trà sữa, canh chuẩn tỉ lệ đường đá, thêm trân châu, dán nắp và phục vụ khách hàng tấp nập.</p>
+          <div class="card-features">
+            <span class="feature-pill">PWA Offline</span>
+            <span class="feature-pill">Đơn Online</span>
+            <span class="feature-pill">Nâng Cấp Quán</span>
+          </div>
+          <div class="btn-play">Vào Quán Chơi ➔</div>
+        </div>
+      </a>
+
+      <!-- Game 2: Bánh Mì Bé Xíu -->
+      <a href="./banh-mi/" class="game-card theme-banhmi">
+        <div class="card-banner">
+          <img src="./banh-mi/assets/icon-192.png" alt="Bánh Mì Bé Xíu" class="card-icon">
+        </div>
+        <div class="card-content">
+          <div class="card-tag">🥖 Bánh Mì Vỉa Hè</div>
+          <h2 class="card-title">Bánh Mì Bé Xíu</h2>
+          <p class="card-desc">Rạch bánh, quết pate thơm béo, kẹp thịt nướng, chả lụa và quản lý hạn sử dụng nguyên liệu mỗi ngày.</p>
+          <div class="card-features">
+            <span class="feature-pill">Quản Lý Tồn Kho</span>
+            <span class="feature-pill">Khách Quen</span>
+            <span class="feature-pill">Mod Menu</span>
+          </div>
+          <div class="btn-play">Vào Quán Chơi ➔</div>
+        </div>
+      </a>
+
+      <!-- Game 3: Tiệm Mì Cay -->
+      <a href="./tiem-my-cay/" class="game-card theme-mycay">
+        <div class="card-banner">
+          <img src="./tiem-my-cay/icon-192.png" alt="Tiệm Mì Cay" class="card-icon">
+        </div>
+        <div class="card-content">
+          <div class="card-tag">🍜 Mì Cay 7 Cấp Độ</div>
+          <h2 class="card-title">Tiệm Mì Cay</h2>
+          <p class="card-desc">Nấu những thố mì cay sôi sùng sục, phối hợp hải sản, thịt bò và kimchi đúng chuẩn vị cay xé lưỡi.</p>
+          <div class="card-features">
+            <span class="feature-pill">Nhạc Nền BGM</span>
+            <span class="feature-pill">Báo Lỗi Server</span>
+            <span class="feature-pill">7 Cấp Độ Cay</span>
+          </div>
+          <div class="btn-play">Vào Quán Chơi ➔</div>
+        </div>
+      </a>
+
+      <!-- Game 4: Tiệm Xôi Bà Tám -->
+      <a href="./tiem-xoi/" class="game-card theme-xoi">
+        <div class="card-banner">
+          <img src="./tiem-xoi/assets/icons/apple-touch-icon.png" alt="Tiệm Xôi Bà Tám" class="card-icon">
+        </div>
+        <div class="card-content">
+          <div class="card-tag">🍚 Xôi Truyền Thống</div>
+          <h2 class="card-title">Tiệm Xôi Bà Tám</h2>
+          <p class="card-desc">Gánh xôi buổi sớm với xôi gấc, xôi xéo, xôi khúc gói lá chuối cùng phong cách đồ họa Retro Canvas hoài niệm.</p>
+          <div class="card-features">
+            <span class="feature-pill">Canvas 2D Engine</span>
+            <span class="feature-pill">Đồ Họa Pixel</span>
+            <span class="feature-pill">Phong Vị Xưa</span>
+          </div>
+          <div class="btn-play">Vào Quán Chơi ➔</div>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="cloud-status">
+      <span class="status-dot"></span>
+      <span>Hệ thống Đám Mây: Sẵn sàng đồng bộ đa thiết bị</span>
+    </div>
+    <p>© 2026 Vietnam Street Food Game Studio • Triển khai tối ưu trên Cloudflare Pages & Workers</p>
+  </footer>
+</body>
+</html>

@@ -4,5 +4,611 @@
     "data": "TTN1_TEST_SAVE_DATA",
     "createdAt": "2026-09-25T09:58:06.005Z",
     "updatedAt": "2026-09-25T09:58:06.005Z"
+  },
+  "YUUDFOCG": {
+    "game": "tiem-my-cay",
+    "code": "YUUDFOCG",
+    "claim": "1234567890abcdef1234567890abcdef1234567890abcdef",
+    "revision": 1,
+    "data": {
+      "v": 1,
+      "day": 2,
+      "money": 50000
+    },
+    "sig": "test_sig_123",
+    "createdAt": "2026-10-05T15:45:25.065Z",
+    "updatedAt": "2026-10-05T15:45:25.065Z",
+    "updatedAtTs": 1791215125064
+  },
+  "JWAAMLHM": {
+    "game": "tiem-my-cay",
+    "code": "JWAAMLHM",
+    "claim": "1234567890abcdef1234567890abcdef1234567890abcdef",
+    "revision": 1,
+    "data": {
+      "v": 1,
+      "day": 2,
+      "money": 50000
+    },
+    "sig": "test_sig_123",
+    "createdAt": "2026-10-05T15:45:25.076Z",
+    "updatedAt": "2026-10-05T15:45:25.076Z",
+    "updatedAtTs": 1791215125076
+  },
+  "VKOKIXCH": {
+    "game": "tiem-my-cay",
+    "code": "VKOKIXCH",
+    "claim": "358440e70d5f5e49c9730e52a03b90f6a5f6bcace57e88ab",
+    "revision": 1,
+    "data": {
+      "v": 1,
+      "money": 653000,
+      "day": 2,
+      "stock": {
+        "kimchi": [],
+        "tomyum": [],
+        "tuongden": [],
+        "phomai_s": [],
+        "launam": [],
+        "mala": [],
+        "tieuxanh": [],
+        "gala": [],
+        "rieu": [],
+        "mi": [
+          {
+            "q": 3,
+            "exp": 5
+          }
+        ],
+        "bowl": [
+          {
+            "q": 10,
+            "exp": 1000000000
+          }
+        ],
+        "bo": [],
+        "xucxich": [
+          {
+            "q": 5,
+            "exp": 3
+          }
+        ],
+        "rau": [],
+        "kimchit": [],
+        "trung": [],
+        "dauhu": [],
+        "nam": [],
+        "bap": [],
+        "cavien": [],
+        "phomai": [],
+        "trungcut": [],
+        "banhgao": [],
+        "haisan": [],
+        "thanhcua": [],
+        "bovien": [],
+        "chaca": [],
+        "rongbien": [],
+        "suicao": [],
+        "bachi": [],
+        "gagion": [],
+        "bachtuoc": []
+      },
+      "unlocked": {
+        "kimchi": true,
+        "tomyum": false,
+        "tuongden": false,
+        "phomai_s": false,
+        "launam": false,
+        "mala": false,
+        "tieuxanh": false,
+        "gala": false,
+        "rieu": false,
+        "mi": true,
+        "bowl": true,
+        "bo": true,
+        "xucxich": true,
+        "rau": false,
+        "kimchit": false,
+        "trung": false,
+        "dauhu": false,
+        "nam": false,
+        "bap": false,
+        "cavien": false,
+        "phomai": false,
+        "trungcut": false,
+        "banhgao": false,
+        "haisan": false,
+        "thanhcua": false,
+        "bovien": false,
+        "chaca": false,
+        "rongbien": false,
+        "suicao": false,
+        "bachi": false,
+        "gagion": false,
+        "bachtuoc": false
+      },
+      "upg": {},
+      "sell": {
+        "kimchi": 35000,
+        "tomyum": 39000,
+        "tuongden": 38000,
+        "phomai_s": 42000,
+        "launam": 38000,
+        "mala": 44000,
+        "tieuxanh": 43000,
+        "gala": 45000,
+        "rieu": 48000,
+        "bo": 15000,
+        "xucxich": 8000,
+        "rau": 5000,
+        "kimchit": 5000,
+        "trung": 6000,
+        "dauhu": 6000,
+        "nam": 6000,
+        "bap": 5000,
+        "cavien": 7000,
+        "phomai": 8000,
+        "trungcut": 7000,
+        "banhgao": 7000,
+        "haisan": 18000,
+        "thanhcua": 7000,
+        "bovien": 8000,
+        "chaca": 7000,
+        "rongbien": 5000,
+        "suicao": 9000,
+        "bachi": 13000,
+        "gagion": 11000,
+        "bachtuoc": 16000
+      },
+      "reviews": [
+        {
+          "s": 2,
+          "t": "Mì dính cục vào nhau, canh giờ luộc lại nha 😞",
+          "k": "Mì dính cục vào nhau, canh giờ luộc lại nha",
+          "d": 1,
+          "w": "noodle",
+          "p": 2,
+          "o": true,
+          "n": "Anh An Khang",
+          "f": {
+            "sk": "#F8D7BF",
+            "hr": "#1E1E2A",
+            "hs": 0,
+            "sh": "#F08A4B",
+            "acc": 2,
+            "img": "cust_office"
+          }
+        },
+        {
+          "s": 4,
+          "t": "Ăn cũng được, ăn trưa là hợp 🙂",
+          "k": "Ăn cũng được, ăn trưa là hợp",
+          "d": 1,
+          "w": "ok",
+          "p": 3,
+          "o": true,
+          "n": "Chị Phượng",
+          "f": {
+            "sk": "#C98E68",
+            "hr": "#4A2C20",
+            "hs": 1,
+            "sh": "#3F7FBF",
+            "acc": 0,
+            "img": "cust_chi3"
+          }
+        },
+        {
+          "s": 5,
+          "t": "Mì không bị nở, lưu quán vào mục yêu thích 🍜",
+          "k": "Mì không bị nở, lưu quán vào mục yêu thích",
+          "d": 1,
+          "w": "appgreat",
+          "p": 3,
+          "o": true,
+          "n": "Chị Gấm",
+          "f": {
+            "sk": "#F1C6A6",
+            "hr": "#4A2C20",
+            "hs": 1,
+            "sh": "#F08A4B",
+            "acc": 0,
+            "img": "cust_chi3"
+          }
+        },
+        {
+          "s": 5,
+          "t": "Giao nhanh, nước súp còn nóng, ở nhà mà như ăn tại quán 👌",
+          "k": "Giao nhanh, nước súp còn nóng, ở nhà mà như ăn tại quán",
+          "d": 1,
+          "w": "appgreat",
+          "p": 6,
+          "o": true,
+          "n": "Ông Nhơn",
+          "f": {
+            "sk": "#E4AE88",
+            "hr": "#3D3050",
+            "hs": 3,
+            "sh": "#3F7FBF",
+            "acc": 0,
+            "img": "cust_ong"
+          }
+        },
+        {
+          "s": 5,
+          "t": "Giao tới vẫn nóng hổi, đặt tiếp liền 😍",
+          "k": "Giao tới vẫn nóng hổi, đặt tiếp liền",
+          "d": 1,
+          "w": "appgreat",
+          "p": 3,
+          "o": true,
+          "n": "Chị Khánh Linh",
+          "f": {
+            "sk": "#F1C6A6",
+            "hr": "#6B3E26",
+            "hs": 1,
+            "sh": "#3F7FBF",
+            "acc": 0,
+            "img": "cust_woman"
+          }
+        },
+        {
+          "s": 5,
+          "t": "Đặt app mà tô vẫn đẹp, 5 sao cho shop và tài xế 🤤",
+          "k": "Đặt app mà tô vẫn đẹp, 5 sao cho shop và tài xế",
+          "d": 1,
+          "w": "appgreat",
+          "p": 3,
+          "o": true,
+          "n": "Chị Hiểu Lam",
+          "f": {
+            "sk": "#F1C6A6",
+            "hr": "#8A5A3B",
+            "hs": 2,
+            "sh": "#2F4858",
+            "acc": 1,
+            "img": "cust_chi3"
+          }
+        },
+        {
+          "s": 5,
+          "t": "Giao tới vẫn nóng hổi, đánh 5 sao trên app 👌",
+          "k": "Giao tới vẫn nóng hổi, đánh 5 sao trên app",
+          "d": 1,
+          "w": "appgreat",
+          "p": 0,
+          "o": true,
+          "n": "Sen",
+          "f": {
+            "sk": "#E4AE88",
+            "hr": "#1E1E2A",
+            "hs": 2,
+            "sh": "#E65A4B",
+            "acc": 1,
+            "img": "cust_girl3"
+          }
+        },
+        {
+          "s": 5,
+          "t": "Mì không bị nở, ở nhà mà như ăn tại quán 👌",
+          "k": "Mì không bị nở, ở nhà mà như ăn tại quán",
+          "d": 1,
+          "w": "appgreat",
+          "p": 0,
+          "o": true,
+          "n": "Phạm Gia Hân",
+          "f": {
+            "sk": "#C98E68",
+            "hr": "#1E1E2A",
+            "hs": 2,
+            "sh": "#8C6BC4",
+            "acc": 1,
+            "img": "cust_girl"
+          }
+        },
+        {
+          "s": 5,
+          "t": "Mì cay kim chi giao tới vẫn đậm đà, đánh 5 sao trên app 🤤",
+          "k": "Mì cay kim chi giao tới vẫn đậm đà, đánh 5 sao trên app",
+          "d": 1,
+          "w": "appgreat",
+          "p": 6,
+          "o": true,
+          "n": "Ông Phước",
+          "f": {
+            "sk": "#E4AE88",
+            "hr": "#BDB6B1",
+            "hs": 0,
+            "sh": "#E77FA5",
+            "acc": 0,
+            "img": "cust_ong"
+          }
+        },
+        {
+          "s": 4,
+          "t": "Mì cay kim chi ngon nhưng Xúc xích hơi ít, cho 4 sao.",
+          "k": "Mì cay kim chi ngon nhưng Xúc xích hơi ít, cho 4 sao.",
+          "d": 1,
+          "w": "ok",
+          "p": 0,
+          "o": true,
+          "n": "Mỹ Linh",
+          "f": {
+            "sk": "#E4AE88",
+            "hr": "#4A2C20",
+            "hs": 2,
+            "sh": "#8C6BC4",
+            "acc": 2,
+            "img": "cust_girl3"
+          }
+        },
+        {
+          "s": 5,
+          "t": "Mì cay kim chi giao tới vẫn đậm đà, cảm ơn shop nha 😋",
+          "k": "Mì cay kim chi giao tới vẫn đậm đà, cảm ơn shop nha",
+          "d": 1,
+          "w": "appgreat",
+          "p": 2,
+          "o": true,
+          "n": "Anh Toàn",
+          "f": {
+            "sk": "#F8D7BF",
+            "hr": "#4A2C20",
+            "hs": 3,
+            "sh": "#F08A4B",
+            "acc": 1,
+            "img": "cust_office"
+          }
+        },
+        {
+          "s": 5,
+          "t": "Shop gói kỹ, nước súp không đổ giọt nào, cảm ơn nha! 🔥",
+          "k": "Shop gói kỹ, nước súp không đổ giọt nào, cảm ơn nha!",
+          "d": 1,
+          "w": "appgreat",
+          "p": 2,
+          "o": true,
+          "n": "Anh Hiển",
+          "f": {
+            "sk": "#E4AE88",
+            "hr": "#2B1B16",
+            "hs": 3,
+            "sh": "#58A55C",
+            "acc": 0,
+            "img": "cust_office"
+          }
+        },
+        {
+          "s": 5,
+          "t": "Giao tới vẫn nóng hổi, chị ở nhà mà như ngồi quán! 😋",
+          "k": "Giao tới vẫn nóng hổi, chị ở nhà mà như ngồi quán!",
+          "d": 1,
+          "w": "appgreat",
+          "p": 3,
+          "o": true,
+          "n": "Chị Mơ",
+          "f": {
+            "sk": "#E4AE88",
+            "hr": "#B0453E",
+            "hs": 1,
+            "sh": "#E65A4B",
+            "acc": 0,
+            "img": "cust_woman"
+          }
+        },
+        {
+          "s": 5,
+          "t": "Giao nhanh mà còn nóng hổi, sẽ đặt tiếp 😍",
+          "k": "Giao nhanh mà còn nóng hổi, sẽ đặt tiếp",
+          "d": 1,
+          "w": "appgreat",
+          "p": 2,
+          "o": true,
+          "n": "Anh Phúc",
+          "f": {
+            "sk": "#C98E68",
+            "hr": "#2B1B16",
+            "hs": 0,
+            "sh": "#8C6BC4",
+            "acc": 1,
+            "img": "cust_anh2"
+          }
+        },
+        {
+          "s": 5,
+          "t": "Nước súp thơm lừng, ai chưa ăn là thiệt",
+          "k": "Nước súp thơm lừng, ai chưa ăn là thiệt",
+          "d": 1,
+          "w": "great",
+          "p": 3,
+          "o": false,
+          "n": "Chị Phương Thảo",
+          "f": {
+            "sk": "#E4AE88",
+            "hr": "#8A5A3B",
+            "hs": 1,
+            "sh": "#E65A4B",
+            "acc": 0,
+            "img": "cust_chi2"
+          }
+        }
+      ],
+      "history": [
+        {
+          "day": 1,
+          "rev": 749000,
+          "cost": 496000,
+          "served": 15,
+          "lost": 0,
+          "avg": 4.666666666666667,
+          "d": {
+            "sales": 685000,
+            "tips": 4000,
+            "gift": 0,
+            "bonus": 60000,
+            "goals": 3,
+            "fee": 127000,
+            "onl": 635000,
+            "apps": 14,
+            "ing": 324000,
+            "ingBy": {
+              "kimchi": 115200,
+              "mi": 57600,
+              "bowl": 36000,
+              "bo": 86400,
+              "xucxich": 28800
+            },
+            "equip": 0,
+            "buys": [],
+            "rent": 0,
+            "util": 15000,
+            "wage": 0,
+            "wages": [],
+            "spoil": 6000,
+            "waste": [
+              [
+                "kimchi",
+                5,
+                30000
+              ],
+              [
+                "bo",
+                2,
+                18000
+              ]
+            ],
+            "xp": 344,
+            "oth": [
+              [
+                "Thuê ship giao đơn xa",
+                -15000
+              ],
+              [
+                "Thuê ship giao đơn xa",
+                -15000
+              ]
+            ],
+            "rush": 0,
+            "loanPay": 0,
+            "loanInt": 0
+          }
+        }
+      ],
+      "shopName": "",
+      "served": 15,
+      "best": 1,
+      "ev": null,
+      "evDay": 2,
+      "hint": true,
+      "sound": true,
+      "music": true,
+      "vol": 1,
+      "sfxVol": 1,
+      "fx": "auto",
+      "seenLv": 1,
+      "staff": {},
+      "decor": {
+        "own": {
+          "awn_red": true
+        },
+        "hide": {},
+        "awn": "awn_red",
+        "pet": null
+      },
+      "lastBackup": 0,
+      "xp": 344,
+      "tot": {
+        "rev": 749000,
+        "cost": 496000,
+        "served": 15
+      },
+      "goals": [
+        {
+          "id": "serve",
+          "n": 8,
+          "p": 8,
+          "done": true,
+          "m": 20000,
+          "xp": 30
+        },
+        {
+          "id": "perfect",
+          "n": 6,
+          "p": 6,
+          "done": true,
+          "m": 20000,
+          "xp": 30
+        },
+        {
+          "id": "five",
+          "n": 3,
+          "p": 3,
+          "done": true,
+          "m": 20000,
+          "xp": 30
+        }
+      ],
+      "goalsDay": 1,
+      "away": {},
+      "cut": null,
+      "love": null,
+      "lvNew": 2,
+      "news": 8,
+      "terms": 5,
+      "termsAt": 1791202975081,
+      "pid": "4srd06dmf7xi",
+      "onboarded": true,
+      "tutDone": true,
+      "theme": "auto",
+      "debts": [],
+      "pr": [],
+      "prq": [],
+      "prOff": false,
+      "prSeen": 0,
+      "buzzNext": 0,
+      "loan": {
+        "n": 0,
+        "got": 0,
+        "paid": 0,
+        "owe": 0,
+        "int": 0,
+        "per": 0
+      },
+      "lau": null,
+      "story": {
+        "st": 1,
+        "seen": 1
+      },
+      "cur": {
+        "ing": 0,
+        "equip": 0,
+        "sales": 0,
+        "tips": 0,
+        "fee": 0,
+        "onl": 0,
+        "apps": 0,
+        "served": 0,
+        "lost": 0,
+        "stars": [],
+        "spoil": 0,
+        "wrong": 0,
+        "bonus": 0,
+        "goals": 0,
+        "xp": 0,
+        "ingBy": {},
+        "buys": [],
+        "oth": [],
+        "rush": 0
+      },
+      "pvpNet": 0,
+      "gift": null,
+      "hag": {
+        "d": 1,
+        "p": 0.04
+      }
+    },
+    "sig": "1szghcg14u8yb4",
+    "createdAt": "2026-10-05T15:47:26.476Z",
+    "updatedAt": "2026-10-05T15:47:26.476Z",
+    "updatedAtTs": 1791215246476
   }
 }
